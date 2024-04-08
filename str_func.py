@@ -4,4 +4,4 @@ def capitalize_string(input_string):
 
 def capitalize_first_letter(s):
     """Функцию, которая делает заглавными первые буквы каждого слова в строке, поступившей на вход функции."""
-    return s.title()
+    return ' '.join(word.capitalize() for word in s.split())
